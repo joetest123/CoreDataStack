@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreDataStack  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <meta property="og:site_name" content="Core Data Stack Programming Guide">
+<meta property="og:description" content="The BNR Core Data Stack is a small framework, written in Swift, that makes it easy to quickly set up a multi-threading ready Core Data stack.">
+<meta property="og:image" content="//www.bignerdranch.com/img/bnr-logo-square.png">
+<link rel="shortcut icon" type="image/x-icon" href="//www.bignerdranch.com/favicon.png">
+
+  </head>
+  <body>
+
+
+    <a title="CoreDataStack  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          CoreDataStack Docs
+        </a>
+         (99% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bignerdranch/CoreDataStack">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Fbignerdranch%2Egithub%2Eio%2FCoreDataStack%2Fdocsets%2FCoreDataStack%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">CoreDataStack Reference</a>
+      <img class="carat" src="img/carat.png" />
+      CoreDataStack  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Stack.html">Stack</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack.html">CoreDataStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack/CoordinatorResult.html">– CoordinatorResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack/BatchContextResult.html">– BatchContextResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack/SetupResult.html">– SetupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CoreDataStack/SuccessResult.html">– SuccessResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Type Safe Monitors.html">Type Safe Monitors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/EntityMonitor.html">EntityMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/EntityMonitorDelegate.html">EntityMonitorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FetchedResultsController.html">FetchedResultsController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FetchedResultsController.html">FetchedResultsController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/FetchedResultsControllerDelegate.html">FetchedResultsControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/FetchedResultsControllerDelegate.html">FetchedResultsControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="NSManagedObject Shorthands.html">NSManagedObject Shorthands</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CoreDataModelable.html">CoreDataModelable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/NSPersistentStoreCoordinator.html">NSPersistentStoreCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/NSManagedObjectContext.html">NSManagedObjectContext</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Supporting Structs and Enums.html">Supporting Structs and Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FetchedResultsSectionChange.html">FetchedResultsSectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FetchedResultsSectionChange.html">FetchedResultsSectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FetchedResultsSectionInfo.html">FetchedResultsSectionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FetchedResultsSectionInfo.html">FetchedResultsSectionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FireFrequency.html">FireFrequency</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#bnr-core-data-stack' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='bnr-core-data-stack'>BNR Core Data Stack</h1>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/BNRCoreDataStack"><img src="https://img.shields.io/cocoapods/v/BNRCoreDataStack.svg" alt="CocoaPods Compatible"></a>
+<a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="GitHub license"></a>
+<a href="https://travis-ci.org/bignerdranch/CoreDataStack"><img src="https://travis-ci.org/bignerdranch/CoreDataStack.svg" alt="Build Status"></a></p>
+
+<p>The BNR Core Data Stack is a small framework, written in Swift, that makes it easy to quickly set up a multi-threading ready Core Data stack.</p>
+
+<p>For more details on the design methodology see: <a href="https://www.bignerdranch.com/blog/introducing-the-big-nerd-ranch-core-data-stack/">Introducing the Big Nerd Ranch Core Data Stack</a></p>
+
+<p>For complete source documentation see: <a href="http://bignerdranch.github.io/CoreDataStack/index.html">Documentation</a></p>
+<a href='#minimum-requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='minimum-requirements'>Minimum Requirements</h2>
+
+<ul>
+<li>OS X 10.10</li>
+<li>tvOS 9.0</li>
+<li>iOS 8.0</li>
+<li>Xcode 7.3</li>
+<li>Swift 2.2</li>
+</ul>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+<a href='#a-href-https-github-com-carthage-carthage-carthage-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-href-https-github-com-carthage-carthage-carthage-a'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
+
+<p>Add the following to your Cartfile:</p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"BigNerdRanch/CoreDataStack"</span>
+</code></pre>
+
+<p>Then run <code>carthage update</code>.</p>
+
+<p>Follow the current instructions in <a href="https://github.com/Carthage/Carthage/blob/master/README.md">Carthage&rsquo;s README</a>
+for up to date installation instructions.</p>
+<a href='#a-href-http-cocoapods-org-cocoapods-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-href-http-cocoapods-org-cocoapods-a'><a href="http://cocoapods.org">CocoaPods</a></h3>
+
+<p>Add the following to your <a href="http://guides.cocoapods.org/using/the-podfile.html">Podfile</a>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'BNRCoreDataStack'</span>
+</code></pre>
+
+<p>You will also need to make sure you&rsquo;re opting into using frameworks:</p>
+<pre class="highlight ruby"><code><span class="n">use_frameworks!</span>
+</code></pre>
+
+<p>Then run <code>pod install</code>.</p>
+<a href='#a-id-usage-a-usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a-id-usage-a-usage'><a id="usage"></a> Usage</h2>
+<a href='#constructing-your-stack' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='constructing-your-stack'>Constructing Your Stack</h3>
+<a href='#import-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='import-framework'>Import Framework</h4>
+
+<p>via: Carthage</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CoreDataStack</span>
+</code></pre>
+
+<p>or via CocoaPods</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">BNRCoreDataStack</span>
+</code></pre>
+<a href='#a-id-sqlite_construct-a-standard-sqlite-backed' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-id-sqlite_construct-a-standard-sqlite-backed'><a id="sqlite_construct"></a> Standard SQLite Backed</h4>
+<pre class="highlight swift"><code><span class="kt">CoreDataStack</span><span class="o">.</span><span class="nf">constructSQLiteStack</span><span class="p">(</span><span class="nv">withModelName</span><span class="p">:</span> <span class="s">"TestModel"</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">stack</span><span class="p">):</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">myCoreDataStack</span> <span class="o">=</span> <span class="n">stack</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Success"</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#in-memory-only' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='in-memory-only'>In-Memory Only</h4>
+<pre class="highlight swift"><code><span class="k">do</span> <span class="p">{</span>
+    <span class="n">myCoreDataStack</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">CoreDataStack</span><span class="o">.</span><span class="nf">constructInMemoryStack</span><span class="p">(</span><span class="nv">withModelName</span><span class="p">:</span> <span class="s">"TestModel"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#working-with-managed-object-contexts' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='working-with-managed-object-contexts'>Working with Managed Object Contexts</h3>
+<a href='#a-id-persisting_moc-a-private-persisting-coordinator-connected-context' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-id-persisting_moc-a-private-persisting-coordinator-connected-context'><a id="persisting_moc"></a> Private Persisting/Coordinator Connected Context</h4>
+
+<p>This is the root level context with a <code>PrivateQueueConcurrencyType</code> for asynchronous saving to the <code>NSPersistentStore</code>. Fetching, Inserting, Deleting or Updating managed objects should occur on a child of this context rather than directly.</p>
+<pre class="highlight swift"><code><span class="n">myCoreDataStack</span><span class="o">.</span><span class="n">privateQueueContext</span>
+</code></pre>
+<a href='#a-id-main_moc-a-main-queue-ui-layer-context' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-id-main_moc-a-main-queue-ui-layer-context'><a id="main_moc"></a> Main Queue / UI Layer Context</h4>
+
+<p>This is our <code>MainQueueConcurrencyType</code> context with its parent being the <a href="#persisting_moc">private persisting context</a>. This context should be used for any main queue or UI related tasks. Examples include setting up an <code>NSFetchedResultsController</code>, performing quick fetches, making UI related updates like a bookmark or favoriting an object. Performing a save() call on this context will automatically trigger a save on its parent via <code>NSNotification</code>.</p>
+<pre class="highlight swift"><code><span class="n">myCoreDataStack</span><span class="o">.</span><span class="n">mainQueueContext</span>
+</code></pre>
+<a href='#a-id-worker_moc-a-creating-a-worker-context' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-id-worker_moc-a-creating-a-worker-context'><a id="worker_moc"></a> Creating a Worker Context</h4>
+
+<p>Calling <code>newChildContext()</code> will vend us a <code>PrivateQueueConcurrencyType</code> child context of the <a href="#main_moc">main queue context</a>. Useful for any longer running task, such as inserting or updating data from a web service. Calling save() on this managed object context will automatically trigger a save on its parent context via <code>NSNotification</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">workerContext</span> <span class="o">=</span> <span class="n">myCoreDataStack</span><span class="o">.</span><span class="nf">newChildContext</span><span class="p">()</span>
+<span class="n">workerContext</span><span class="o">.</span><span class="nf">performBlock</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// fetch data from web-service</span>
+    <span class="c1">// update local data</span>
+    <span class="n">workerContext</span><span class="o">.</span><span class="nf">saveContext</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#large-import-operation-context' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='large-import-operation-context'>Large Import Operation Context</h4>
+
+<p>In most cases, offloading your longer running work to a <a href="#worker_moc">background worker context</a> will be sufficient in alleviating performance woes. If you find yourself inserting or updating thousands of objects then perhaps opting for a stand alone managed object context with a discrete persistent store like so would be the best option:</p>
+<pre class="highlight swift"><code><span class="n">myCoreDataStack</span><span class="o">.</span><span class="nf">newBatchOperationContext</span><span class="p">()</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">batchContext</span><span class="p">):</span>
+        <span class="c1">// my big import operation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#resetting-the-stack' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='resetting-the-stack'>Resetting The Stack</h3>
+
+<p>At times it can be necessary to completely reset your Core Data store and remove the file from disk, for example when a user logs out of your application. An instance of <code>CoreDataStack</code> can be reset by using the function 
+<code>resetStore(resetCallback: CoreDataStackStoreResetCallback)</code>.</p>
+<pre class="highlight swift"><code><span class="n">myCoreDataStack</span><span class="o">.</span><span class="nf">resetStore</span><span class="p">()</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">:</span>
+        <span class="c1">// proceed with fresh Core Data Stack</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#core-data-modelable-protocol' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='core-data-modelable-protocol'>Core Data Modelable Protocol</h3>
+
+<p><code>CoreDataModelable</code> is a simple protocol that adds convenience methods on <code>NSManagedObject</code> subclasses. These methods make fetching, inserting, deleting, and change management easier.</p>
+<a href='#example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='example'>Example</h4>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Book</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="p">,</span> <span class="kt">CoreDataModelable</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="k">let</span> <span class="nv">entityName</span> <span class="o">=</span> <span class="s">"Book"</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">allBooks</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">Book</span><span class="o">.</span><span class="nf">allInContext</span><span class="p">(</span><span class="n">moc</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">anyBook</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">Book</span><span class="o">.</span><span class="nf">findFirstInContext</span><span class="p">(</span><span class="n">moc</span><span class="p">)</span>
+<span class="k">try</span> <span class="kt">Book</span><span class="o">.</span><span class="nf">removeAllInContext</span><span class="p">(</span><span class="n">moc</span><span class="p">)</span>
+</code></pre>
+<a href='#type-safe-monitors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='type-safe-monitors'>Type Safe Monitors</h3>
+<a href='#fetched-results-controller' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='fetched-results-controller'>Fetched Results Controller</h4>
+
+<p><code>FetchedResultsController&lt;T&gt;</code> is a type safe wrapper around <code>NSFetchedResultsController</code> using Swift generics.</p>
+<a href='#example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='example'>Example</h5>
+
+<p>See <a href="./Example/BooksTableViewController.swift">BooksTableViewController.swift</a> for an example.</p>
+<a href='#entity-monitor' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='entity-monitor'>Entity Monitor</h4>
+
+<p><code>EntityMonitor&lt;T&gt;</code> is a class for monitoring inserts, deletes, and updates of a specific <code>NSManagedObject</code> subclass within an <code>NSManagedObjectContext</code>.</p>
+<a href='#example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='example'>Example</h5>
+
+<p>See <a href="./CoreDataStackTests/EntityMonitorTests.swift">EntityMonitorTests.swift</a> for an example.</p>
+<a href='#contributing' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contributing'>Contributing</h2>
+
+<p>Please see our <a href="https://github.com/bignerdranch/CoreDataStack/tree/master/.github/CONTRIBUTING.md">guide to contributing to the CoreDataStack</a></p>
+<a href='#debugging-tips' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='debugging-tips'>Debugging Tips</h2>
+
+<p>To validate that you are honoring all of the threading rules it&rsquo;s common to add the following to a project scheme under <code>Run &gt; Arguments &gt; Arguments Passed On Launch</code>.</p>
+
+<p><code>-com.apple.CoreData.ConcurrencyDebug 1</code></p>
+
+<p>This will throw an exception if you happen to break a threading rule. For more on setting up Launch Arguments check out this <a href="http://nshipster.com/launch-arguments-and-environment-variables/">article by NSHipster</a>.</p>
+<a href='#icloud-and-itunes-backup-considerations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='icloud-and-itunes-backup-considerations'>iCloud and iTunes Backup Considerations</h2>
+
+<p>By default the CoreData store URL can be included in the backup of a device to both iCloud and local disk backups via iTunes. For sensitive information such as health records or other personally identifiable information, you should supply an <code>NSURL</code> to the constructor that has been flagged as excluded from backup.</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="c1">// Setup your URL</span>
+<span class="k">let</span> <span class="nv">documentsDirectory</span> <span class="o">=</span> <span class="kt">NSFileManager</span><span class="o">.</span><span class="nf">defaultManager</span><span class="p">()</span><span class="o">.</span><span class="kt">URLsForDirectory</span><span class="p">(</span><span class="o">.</span><span class="kt">DocumentDirectory</span><span class="p">,</span> <span class="nv">inDomains</span><span class="p">:</span> <span class="o">.</span><span class="kt">UserDomainMask</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="o">!</span>
+<span class="k">let</span> <span class="nv">storeFileURL</span> <span class="o">=</span> <span class="kt">NSURL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"MyModel.sqlite"</span><span class="p">,</span> <span class="nv">relativeToURL</span><span class="p">:</span> <span class="n">documentsDirectory</span><span class="p">)</span><span class="o">!</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="n">storeFileURL</span><span class="o">.</span><span class="nf">setResourceValue</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">NSURLIsExcludedFromBackupKey</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="c1">//handle error ...</span>
+<span class="p">}</span>
+
+<span class="c1">// Create your stack</span>
+<span class="kt">CoreDataStack</span><span class="o">.</span><span class="nf">constructSQLiteStack</span><span class="p">(</span><span class="nv">withModelName</span><span class="p">:</span> <span class="s">"MyModel"</span><span class="p">,</span> <span class="nv">withStoreURL</span><span class="p">:</span> <span class="n">storeFileURL</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">stack</span><span class="p">):</span>
+        <span class="c1">// Use your new stack</span>
+    <span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="c1">//handle error ...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre>
+<a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
+
+<p><a href="http://bignerdranch.com"><img src="https://raw.githubusercontent.com/bignerdranch/CoreDataStack/master/Resources/logo.png" alt="Big Nerd Ranch"></a></p>
+
+<ul>
+<li>We <a href="https://www.bignerdranch.com/we-develop/">Develop</a> custom apps for clients around the world.</li>
+<li>We <a href="https://www.bignerdranch.com/we-teach/">Teach</a> immersive development bootcamps.</li>
+<li>We <a href="https://www.bignerdranch.com/we-write/">Write</a> best-selling Big Nerd Ranch Guides.</li>
+</ul>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2014-2016 <a class="link" href="//www.bignerdranch.com" target="_blank" rel="external">Big Nerd Ranch</a> under <a class="link" href="https://raw.githubusercontent.com/bignerdranch/CoreDataStack/master/LICENSE" target="_blank" rel="external">MIT license</a>.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
